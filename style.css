@@ -1,0 +1,305 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0%;
+  color: rgb(189, 76, 0);
+  background: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  line-height: 2.5;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+logo span{
+  color: aliceblue;
+}
+
+nav{
+  display: flex;
+  gap: 18px;
+}
+
+.hero{
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 70px 12%;
+  background: rgb(16, 0, 75);
+}
+
+.hero-text{
+  max-width: 540px;
+}
+
+.small-title{
+  color: rgb(255, 194, 88);
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-title{
+  color: rgb(248, 163, 16);
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1{
+  margin: 0%;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+h1 span{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.hero h2{
+  color:aliceblue;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+h2{
+  color:rgb(0, 0, 0);
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.intro{
+  color: antiquewhite;
+  font-weight: bold;
+  max-width: 500px;
+  font-size: 18px;
+}
+
+.button{
+  display: inline-block;
+  margin-top: 14px;
+  padding: 13px 20px;
+  color: white;
+  background: rgb(8, 109, 242);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: rgb(3, 3, 214);
+}
+
+.photo-box{
+  text-align: center;
+}
+
+.profile-photo{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid black;
+  box-shadow: 10px 10px 0px whitesmoke;
+}
+
+.photo-box p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(230, 131, 55);
+}
+
+.section{
+  padding: 82px 12%;
+}
+
+.section>p:not(.section-title){
+  max-width: 500px;
+  font: 17px sans-serif;
+}
+
+.skills{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.skills span{
+  border: 1px solid black;
+  border-radius: 24px;
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about p{
+  color:rgb(16, 0, 75);
+}
+
+.projects{
+  background: rgb(16, 0, 75);
+}
+
+.projects h2{
+  color: aliceblue;
+}
+
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.project-card{
+  min-height: 300px;
+  padding: 20px;
+  background: whitesmoke;
+}
+
+.project-card:hover{
+  transform: translateY(-6px);
+  transition: 0.5s;
+}
+
+.main-project{
+  background: rgb(152, 197, 252);
+}
+
+.project-number{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-card h3{
+  color: rgb(16, 0, 75);
+  margin-top: 28px;
+  font-size: 25px;
+}
+
+.project-card p{
+  color:  rgb(16, 0, 75);
+}
+
+.tools{
+  font-weight: bold;
+  margin-top: 30px;
+  color: black;
+  font-size: 18px;
+}
+
+.main-project .tools{
+  color: rgb(0, 0, 7);
+}
+
+.contact{
+  text-align: center;
+}
+
+.contact p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email{
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.contact a{
+  color: blue;
+}
+
+.email:hover, .social-links:hover{
+  color: rgb(250, 217, 217);
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 35px;
+  font-weight: bold;
+}
+
+.social-links:hover{
+  color: blue;
+}
+
+footer{
+  padding: 23px;
+  color: black;
+  background: rgb(15, 157, 228);
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+} 
+
+@media (max-width: 700px) {
+  header {
+    padding: 18px 7%;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 40px 9%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  .profile-photo {
+    width: 210px;
+    height: 210px;
+  }
+
+  .section {
+    padding: 65px 9%;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
